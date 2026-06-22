@@ -107,33 +107,64 @@ document.addEventListener("mousemove", (e) => {
 // ===== Minecraft Server Status =====
 
 async function loadServerStatus() {
-    const statusText = document.getElementById("server-status");
-    const playerText = document.getElementById("server-players");
+
+    const statusText =
+        document.getElementById("server-status");
+
+    const playerText =
+        document.getElementById("server-players");
 
     if (!statusText || !playerText) {
         return;
     }
 
     try {
+
         const response = await fetch(
             "https://api.mcsrvstat.us/3/yearning-hc.gl.joinmc.link"
         );
 
         const data = await response.json();
 
-        if (data.online) {
-            statusText.innerText = "オンライン";
-            playerText.innerText =
-                `${data.players.online} / ${data.players.max}`;
+        if (data.online === true) {
+
+            statusText.innerHTML =
+                "🟢 オンライン";
+
+            if (data.players) {
+
+                playerText.innerHTML =
+                    `${data.players.online} / ${data.players.max}`;
+
+            } else {
+
+                playerText.innerHTML =
+                    "取得不可";
+
+            }
+
         } else {
-            statusText.innerText = "オフライン";
-            playerText.innerText = "0 / 0";
+
+            statusText.innerHTML =
+                "🔴 オフライン";
+
+            playerText.innerHTML =
+                "-";
+
         }
 
     } catch (error) {
-        statusText.innerText = "取得失敗";
-        playerText.innerText = "-";
+
+        statusText.innerHTML =
+            "⚠️ 取得失敗";
+
+        playerText.innerHTML =
+            "-";
+
     }
+
 }
 
 loadServerStatus();
+
+setInterval(loadServerStatus, 60000);
