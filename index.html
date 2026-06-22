@@ -2,26 +2,191 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TSUNAMI SMP</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>TSUNAMI SMP</h1>
-    <p>Economy & Survival Server</p>
+
+  <header class="site-header">
+    <div class="logo">TSUNAMI SMP</div>
+
+    <nav class="nav">
+      <a href="index.html">ホーム</a>
+      <a href="rules.html">ルール</a>
+      <a href="commands.html">コマンド集</a>
+      <a href="elitemobs.html">EliteMobs</a>
+      <a href="economy.html">経済</a>
+      <a href="updates.html">更新履歴</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">ホーム</a>
-    <a href="commands.html">コマンド一覧</a>
-  </nav>
+  <section class="hero">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+
+    <div class="hero-content reveal">
+      <p class="server-label">Economy & Survival Server</p>
+      <h1>TSUNAMI SMP</h1>
+      <p class="hero-text">
+        経済・サバイバル・EliteMobsを楽しめるMinecraftサーバー。
+      </p>
+
+      <div class="ip-box">
+        <span id="server-ip">yearning-hc.gl.joinmc.link</span>
+        <button onclick="copyIP()">IPをコピー</button>
+      </div>
+
+      <div class="hero-buttons">
+    <a href="rules.html" class="btn primary">
+        ルールを見る
+    </a>
+
+    <a href="commands.html" class="btn secondary">
+        コマンドを見る
+    </a>
+
+    <a href="https://discord.gg/b72mPS58dR"
+       target="_blank"
+       class="btn discord-btn">
+        Discordに参加
+    </a></div>
+    </div>
+  </section>
 
   <main>
-    <h2>ようこそ</h2>
-    <p>TSUNAMI SMPは、経済とサバイバルを中心にしたMinecraftサーバーです。</p>
 
-    <h2>サーバーIP</h2>
-    <p class="ip">yearning-hc.gl.joinmc.link</p>
+    <section class="section reveal">
+      <h2>TSUNAMI SMPとは？</h2>
+      <p>
+        TSUNAMI SMPは、通常のサバイバルに経済・ショップ・テレポート・EliteMobsなどを追加した、
+        遊びやすく本格的なMinecraftサーバーです。
+      </p>
+    </section>
+
+<section class="section reveal">
+  <h2>お知らせ</h2>
+
+  <div class="news-box">
+    <div class="news-item">
+      <span>2026/06/22</span>
+      <p>TSUNAMI SMP公式サイトを公開しました。</p>
+    </div>
+
+    <div class="news-item">
+      <span>2026/06/21</span>
+      <p>経済システムと便利コマンドを追加しました。</p>
+    </div>
+
+    <div class="news-item">
+      <span>2026/06/20</span>
+      <p>Season 1を開始しました。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section glass reveal">
+  <h2>サーバーステータス</h2>
+
+  <div class="status-grid">
+    <div class="status-card">
+      <span class="status-label">状態</span>
+      <strong id="server-status">取得中...</strong>
+    </div>
+
+    <div class="status-card">
+      <span class="status-label">オンライン人数</span>
+      <strong id="server-players">取得中...</strong>
+    </div>
+
+    <div class="status-card">
+      <span class="status-label">バージョン</span>
+      <strong>Java 1.21.11</strong>
+    </div>
+  </div>
+
+  <div class="join-actions">
+    <a href="commands.html" class="btn primary">遊び方を見る</a>
+    <a href="rules.html" class="btn secondary">ルール確認</a>
+  </div>
+</section>
+
+    <section class="cards">
+      <div class="card reveal">
+        <h3>経済システム</h3>
+        <p>お金を稼ぎ、ショップでアイテムを売買できます。</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>便利コマンド</h3>
+        <p>/home、/tpa、/ec、/rtp などを使って快適に遊べます。</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>EliteMobs</h3>
+        <p>強力なモブや特別な報酬で、普通のサバイバルより刺激的に楽しめます。</p>
+      </div>
+    </section>
+
+    <section class="section glass reveal">
+      <h2>はじめ方</h2>
+
+      <div class="steps">
+        <div>
+          <span>01</span>
+          <p>サーバーIPをコピー</p>
+        </div>
+        <div>
+          <span>02</span>
+          <p>Minecraft Java版でマルチプレイを開く</p>
+        </div>
+        <div>
+          <span>03</span>
+          <p>TSUNAMI SMPに参加</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>おすすめページ</h2>
+
+      <div class="link-grid">
+        <a href="rules.html">サーバールール</a>
+        <a href="commands.html">コマンド集</a>
+        <a href="elitemobs.html">EliteMobs説明</a>
+        <a href="economy.html">経済システム</a>
+      </div>
+    </section>
+
+        <br>
+
+            <a href="https://discord.gg/b72mPS58dR"
+               target="_blank"
+               class="btn discord-btn">
+                Discordへ参加
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>サポート</h3>
+
+            <p>
+                不具合報告や荒らし報告は
+                Discordから受け付けています。
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
   </main>
+
+  <footer>
+    <p>© TSUNAMI SMP</p>
+    <p>yearning-hc.gl.joinmc.link</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

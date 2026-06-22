@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コマンド集 - TSUNAMI SMP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo">TSUNAMI SMP</div>
+
+    <nav class="nav">
+        <a href="index.html">ホーム</a>
+        <a href="rules.html">ルール</a>
+        <a href="commands.html">コマンド集</a>
+        <a href="elitemobs.html">EliteMobs</a>
+        <a href="economy.html">経済</a>
+        <a href="updates.html">更新履歴</a>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <div class="hero-content reveal">
+        <p class="server-label">Command List</p>
+        <h1>コマンド集</h1>
+        <p class="hero-text">
+            TSUNAMI SMPで利用できる主要コマンド一覧
+        </p>
+    </div>
+</section>
+
+<main>
+
+<section class="section reveal">
+    <h2>コマンド検索</h2>
+
+    <input
+        type="text"
+        id="commandSearch"
+        placeholder="コマンドを検索..."
+        class="command-search"
+    >
+</section>
+
+<section class="section reveal">
+
+    <h2>移動系</h2>
+
+    <div class="command-grid">
+
+        <div class="command-card">
+            <h3>/spawn</h3>
+            <p>スポーン地点へ移動します。</p>
+        </div>
+
+        <div class="command-card">
+            <h3>/sethome</h3>
+            <p>ホーム地点を設定します。</p>
+        </div>
+
+        <div class="command-card">
+            <h3>/home</h3>
+            <p>設定したホームへ移動します。</p>
+        </div>
+
+        <div class="command-card">
+            <h3>/rtp</h3>
+            <p>ランダムな場所へテレポートします。</p>
+        </div>
+
+        <div class="command-card">
+            <h3>/tpa</h3>
+            <p>プレイヤーへテレポート申請を送ります。</p>
+        </div>
+
+        <div class="command-card">
+            <h3>/tpaccept</h3>
+            <p>テレポート申請を承認します。</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section reveal">
+
+    <h2>経済系</h2>
+
+    <div class="command-grid">
+
+        <div class="command-card">
+            <h3>/bal</h3>
+            <p>所持金を確認します。</p>
+        </div>
+
+        <div class="command-card">
+            <h3>/pay</h3>
+            <p>他プレイヤーへ送金します。</p>
+        </div>
+
+        <div class="command-card">
+            <h3>/baltop</h3>
+            <p>資産ランキングを確認します。</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section reveal">
+
+    <h2>便利機能</h2>
+
+    <div class="command-grid">
+
+        <div class="command-card">
+            <h3>/ec</h3>
+            <p>エンダーチェストを開きます。</p>
+        </div>
+
+        <div class="command-card">
+            <h3>/msg</h3>
+            <p>個人メッセージを送信します。</p>
+        </div>
+
+        <div class="command-card">
+            <h3>/reply</h3>
+            <p>最後にメッセージした相手へ返信します。</p>
+        </div>
+
+        <div class="command-card">
+            <h3>/ignore</h3>
+            <p>特定プレイヤーをミュートします。</p>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© TSUNAMI SMP</p>
+    <p>yearning-hc.gl.joinmc.link</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+const searchInput = document.getElementById("commandSearch");
+
+searchInput.addEventListener("keyup", () => {
+
+    const value = searchInput.value.toLowerCase();
+
+    document.querySelectorAll(".command-card")
+        .forEach(card => {
+
+            const text =
+                card.innerText.toLowerCase();
+
+            if(text.includes(value)) {
+                card.style.display = "";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+});
+</script>
+
+</body>
+</html>
