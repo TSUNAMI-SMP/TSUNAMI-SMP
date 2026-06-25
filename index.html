@@ -1,5 +1,5 @@
-```html
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -12,205 +12,257 @@
   <header class="site-header">
     <div class="logo">TSUNAMI SMP</div>
 
-    <nav class="nav">
-      <a href="index.html">ホーム</a>
-      <a href="rules.html">ルール</a>
-      <a href="commands.html">コマンド集</a>
-      <a href="elitemobs.html">EliteMobs</a>
-      <a href="economy.html">経済</a>
-      <a href="updates.html">更新履歴</a>
-    </nav>
+```
+<nav class="nav">
+  <a href="index.html">ホーム</a>
+  <a href="rules.html">ルール</a>
+  <a href="commands.html">コマンド集</a>
+  <a href="elitemobs.html">EliteMobs</a>
+  <a href="economy.html">経済</a>
+  <a href="updates.html">更新履歴</a>
+</nav>
+```
+
   </header>
 
   <section class="hero">
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
 
-    <div class="hero-content reveal">
-      <p class="server-label">Economy & Survival Server</p>
-      <h1>TSUNAMI SMP</h1>
-      <p class="hero-text">
-        Java版・統合版の両方で参加できる、経済・サバイバル・EliteMobsを楽しめるMinecraftサーバー。
-      </p>
+```
+<div class="hero-content reveal">
+  <p class="server-label">Economy & Survival Server</p>
+  <h1>TSUNAMI SMP</h1>
 
-      <div class="ip-box">
-        <span id="server-ip">yearning-hc.gl.joinmc.link</span>
-        <button onclick="copyIP()">Java版IPをコピー</button>
-      </div>
+  <p class="hero-text">
+    Java版・統合版の両方で参加できる、経済・サバイバル・EliteMobs・ギルドを楽しめるMinecraftサーバー。
+  </p>
 
-      <div class="ip-box">
-        <span id="bedrock-ip">artists-must.gl.at.ply.gg</span>
-        <button onclick="copyBedrockIP()">統合版IPをコピー</button>
-      </div>
+  <div class="ip-box">
+    <span id="server-ip">tsunamismp.ddns.net</span>
+    <button onclick="copyIP()">IPをコピー</button>
+  </div>
 
-      <p class="hero-text">
-        統合版ポート：<strong>43043</strong>
-      </p>
+  <p class="hero-text">
+    Java版：<strong>tsunamismp.ddns.net</strong><br>
+    統合版：<strong>tsunamismp.ddns.net</strong> / ポート：<strong>19132</strong>
+  </p>
 
-      <div class="hero-buttons">
-        <a href="rules.html" class="btn primary">ルールを見る</a>
-        <a href="commands.html" class="btn secondary">コマンドを見る</a>
-        <a href="https://discord.gg/b72mPS58dR" target="_blank" class="btn discord-btn">Discordに参加</a>
-      </div>
-    </div>
+  <div class="hero-buttons">
+    <a href="rules.html" class="btn primary">ルールを見る</a>
+    <a href="commands.html" class="btn secondary">コマンドを見る</a>
+    <a href="https://discord.gg/b72mPS58dR" target="_blank" class="btn discord-btn">Discordに参加</a>
+  </div>
+</div>
+```
+
   </section>
 
   <main>
 
-    <section class="section reveal">
-      <h2>TSUNAMI SMPとは？</h2>
-      <p>
-        TSUNAMI SMPは、通常のサバイバルに経済・ショップ・テレポート・EliteMobsなどを追加した、
-        遊びやすく本格的なMinecraftサーバーです。
-      </p>
-    </section>
+```
+<section class="section reveal">
+  <h2>TSUNAMI SMPとは？</h2>
+  <p>
+    TSUNAMI SMPは、通常のサバイバルに経済・ショップ・テレポート・EliteMobs・ギルド機能などを追加した、
+    遊びやすく本格的なMinecraftサーバーです。
+    初心者でも始めやすく、長く遊ぶほど成長や目標が増えていくサーバーを目指しています。
+  </p>
+</section>
 
-    <section class="section glass reveal">
-      <h2>参加方法</h2>
+<section class="section glass reveal">
+  <h2>参加方法</h2>
 
-      <div class="status-grid">
-        <div class="status-card">
-          <span class="status-label">Java版</span>
-          <strong>yearning-hc.gl.joinmc.link</strong>
-        </div>
+  <div class="status-grid">
+    <div class="status-card">
+      <span class="status-label">サーバーIP</span>
+      <strong>tsunamismp.ddns.net</strong>
+    </div>
 
-        <div class="status-card">
-          <span class="status-label">統合版 IP</span>
-          <strong>artists-must.gl.at.ply.gg</strong>
-        </div>
+    <div class="status-card">
+      <span class="status-label">対応機種</span>
+      <strong>Java版 / 統合版</strong>
+    </div>
 
-        <div class="status-card">
-          <span class="status-label">統合版 ポート</span>
-          <strong>43043</strong>
-        </div>
-      </div>
-    </section>
+    <div class="status-card">
+      <span class="status-label">統合版ポート</span>
+      <strong>19132</strong>
+    </div>
+  </div>
 
-    <section class="section reveal">
-      <h2>お知らせ</h2>
+  <p class="section-text">
+    Java版はIPをそのまま入力してください。統合版はIPに加えて、ポートに <strong>19132</strong> を入力してください。
+  </p>
+</section>
 
-      <div class="news-box">
-        <div class="news-item">
-          <span>2026/06/23</span>
-          <p>統合版からの参加に対応しました。</p>
-        </div>
+<section class="section reveal">
+  <h2>お知らせ</h2>
 
-        <div class="news-item">
-          <span>2026/06/22</span>
-          <p>TSUNAMI SMP公式サイトを公開しました。</p>
-        </div>
+  <div class="news-box">
 
-        <div class="news-item">
-          <span>2026/06/21</span>
-          <p>経済システムと便利コマンドを追加しました。</p>
-        </div>
+    <div class="news-item">
+      <span>2026/06/25</span>
+      <p>ギルド機能を追加しました。/guild からギルド作成、参加、クエスト、強化などを利用できます。</p>
+    </div>
 
-        <div class="news-item">
-          <span>2026/06/20</span>
-          <p>Season 1を開始しました。</p>
-        </div>
-      </div>
-    </section>
+    <div class="news-item">
+      <span>2026/06/25</span>
+      <p>サーバーIPを tsunamismp.ddns.net に統一しました。統合版ポートは19132です。</p>
+    </div>
 
-    <section class="section glass reveal">
-      <h2>サーバーステータス</h2>
+    <div class="news-item">
+      <span>2026/06/24</span>
+      <p>ショップ価格や経済バランスを調整しました。</p>
+    </div>
 
-      <div class="status-grid">
-        <div class="status-card">
-          <span class="status-label">状態</span>
-          <strong id="server-status">取得中...</strong>
-        </div>
+    <div class="news-item">
+      <span>2026/06/23</span>
+      <p>Java版・統合版の両方から参加できるように調整しました。</p>
+    </div>
 
-        <div class="status-card">
-          <span class="status-label">オンライン人数</span>
-          <strong id="server-players">取得中...</strong>
-        </div>
+    <div class="news-item">
+      <span>2026/06/22</span>
+      <p>TSUNAMI SMP公式サイトを公開しました。</p>
+    </div>
 
-        <div class="status-card">
-          <span class="status-label">バージョン</span>
-          <strong>Java 1.21.11 / 統合版対応</strong>
-        </div>
-      </div>
+    <div class="news-item">
+      <span>2026/06/21</span>
+      <p>経済システムと便利コマンドを追加しました。</p>
+    </div>
 
-      <div class="join-actions">
-        <a href="commands.html" class="btn primary">遊び方を見る</a>
-        <a href="rules.html" class="btn secondary">ルール確認</a>
-      </div>
-    </section>
+    <div class="news-item">
+      <span>2026/06/20</span>
+      <p>Season 1を開始しました。</p>
+    </div>
 
-    <section class="cards">
-      <div class="card reveal">
-        <h3>経済システム</h3>
-        <p>お金を稼ぎ、ショップでアイテムを売買できます。</p>
-      </div>
+  </div>
+</section>
 
-      <div class="card reveal">
-        <h3>便利コマンド</h3>
-        <p>/home、/tpa、/ec、/tpr などを使って快適に遊べます。</p>
-      </div>
+<section class="section glass reveal">
+  <h2>サーバーステータス</h2>
 
-      <div class="card reveal">
-        <h3>EliteMobs</h3>
-        <p>強力なモブや特別な報酬で、普通のサバイバルより刺激的に楽しめます。</p>
-      </div>
-    </section>
+  <div class="status-grid">
+    <div class="status-card">
+      <span class="status-label">状態</span>
+      <strong id="server-status">取得中...</strong>
+    </div>
 
-    <section class="section glass reveal">
-      <h2>はじめ方</h2>
+    <div class="status-card">
+      <span class="status-label">オンライン人数</span>
+      <strong id="server-players">取得中...</strong>
+    </div>
 
-      <div class="steps">
-        <div>
-          <span>01</span>
-          <p>Java版または統合版の接続情報を確認</p>
-        </div>
-        <div>
-          <span>02</span>
-          <p>Minecraftでサーバーを追加</p>
-        </div>
-        <div>
-          <span>03</span>
-          <p>TSUNAMI SMPに参加</p>
-        </div>
-      </div>
-    </section>
+    <div class="status-card">
+      <span class="status-label">対応</span>
+      <strong>Java版 / 統合版対応</strong>
+    </div>
+  </div>
 
-    <section class="section reveal">
-      <h2>おすすめページ</h2>
+  <div class="join-actions">
+    <a href="commands.html" class="btn primary">遊び方を見る</a>
+    <a href="rules.html" class="btn secondary">ルール確認</a>
+  </div>
+</section>
 
-      <div class="link-grid">
-        <a href="rules.html">サーバールール</a>
-        <a href="commands.html">コマンド集</a>
-        <a href="elitemobs.html">EliteMobs説明</a>
-        <a href="economy.html">経済システム</a>
-      </div>
-    </section>
+<section class="cards">
+  <div class="card reveal">
+    <h3>経済システム</h3>
+    <p>
+      お金を稼ぎ、ショップでアイテムを売買できます。
+      採掘・農業・モブドロップなどを活用して資産を増やしましょう。
+    </p>
+  </div>
 
-    <section class="section glass reveal">
-      <h2>サポート</h2>
-      <p>
-        不具合報告や荒らし報告はDiscordから受け付けています。
-      </p>
+  <div class="card reveal">
+    <h3>便利コマンド</h3>
+    <p>
+      /home、/tpa、/ec、/tpr などを使って快適に遊べます。
+      詳しい使い方はコマンド集を確認してください。
+    </p>
+  </div>
 
-      <a href="https://discord.gg/b72mPS58dR" target="_blank" class="btn discord-btn">
-        Discordへ参加
-      </a>
-    </section>
+  <div class="card reveal">
+    <h3>EliteMobs</h3>
+    <p>
+      強力なモブ、ボス、特別な報酬で、普通のサバイバルより刺激的に楽しめます。
+    </p>
+  </div>
+
+  <div class="card reveal">
+    <h3>ギルド</h3>
+    <p>
+      仲間とギルドを作成し、クエストやギルドポイント、永続強化を進められます。
+    </p>
+  </div>
+</section>
+
+<section class="section glass reveal">
+  <h2>はじめ方</h2>
+
+  <div class="steps">
+    <div>
+      <span>01</span>
+      <p>サーバーIP「tsunamismp.ddns.net」をコピー</p>
+    </div>
+
+    <div>
+      <span>02</span>
+      <p>Minecraftでサーバーを追加</p>
+    </div>
+
+    <div>
+      <span>03</span>
+      <p>統合版の場合はポートに「19132」を入力</p>
+    </div>
+
+    <div>
+      <span>04</span>
+      <p>TSUNAMI SMPに参加してサバイバル開始</p>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h2>おすすめページ</h2>
+
+  <div class="link-grid">
+    <a href="rules.html">サーバールール</a>
+    <a href="commands.html">コマンド集</a>
+    <a href="elitemobs.html">EliteMobs説明</a>
+    <a href="economy.html">経済システム</a>
+    <a href="updates.html">更新履歴</a>
+  </div>
+</section>
+
+<section class="section glass reveal">
+  <h2>サポート</h2>
+  <p>
+    不具合報告、荒らし報告、質問、イベント情報はDiscordから確認できます。
+    困ったことがあれば運営まで連絡してください。
+  </p>
+
+  <a href="https://discord.gg/b72mPS58dR" target="_blank" class="btn discord-btn">
+    Discordへ参加
+  </a>
+</section>
+```
 
   </main>
 
   <footer>
     <p>© TSUNAMI SMP</p>
-    <p>Java: yearning-hc.gl.joinmc.link</p>
-    <p>Bedrock: artists-must.gl.at.ply.gg / Port: 43043</p>
+    <p>Server IP: tsunamismp.ddns.net</p>
+    <p>Bedrock Port: 19132</p>
   </footer>
 
   <script src="script.js"></script>
+
   <script>
-    function copyBedrockIP() {
-      navigator.clipboard.writeText("artists-must.gl.at.ply.gg");
-      alert("統合版IPをコピーしました！");
+    function copyIP() {
+      navigator.clipboard.writeText("tsunamismp.ddns.net");
+      alert("サーバーIPをコピーしました！");
     }
   </script>
+
 </body>
 </html>
-```

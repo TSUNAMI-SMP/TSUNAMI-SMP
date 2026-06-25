@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -11,14 +12,17 @@
 <header class="site-header">
     <div class="logo">TSUNAMI SMP</div>
 
-    <nav class="nav">
-        <a href="index.html">ホーム</a>
-        <a href="rules.html">ルール</a>
-        <a href="commands.html">コマンド集</a>
-        <a href="elitemobs.html">EliteMobs</a>
-        <a href="economy.html">経済</a>
-        <a href="updates.html">更新履歴</a>
-    </nav>
+```
+<nav class="nav">
+    <a href="index.html">ホーム</a>
+    <a href="rules.html">ルール</a>
+    <a href="commands.html">コマンド集</a>
+    <a href="elitemobs.html">EliteMobs</a>
+    <a href="economy.html">経済</a>
+    <a href="updates.html">更新履歴</a>
+</nav>
+```
+
 </header>
 
 <section class="page-hero">
@@ -26,92 +30,258 @@
         <p class="server-label">Update History</p>
         <h1>更新履歴</h1>
         <p class="hero-text">
-            TSUNAMI SMPのアップデート情報とイベント告知
+            TSUNAMI SMPのアップデート情報・イベント告知・今後の予定をまとめています。
         </p>
     </div>
 </section>
 
 <main>
 
+<section class="section glass reveal">
+    <h2>現在のサーバー情報</h2>
+
+```
+<div class="status-grid">
+    <div class="status-card">
+        <span class="status-label">サーバーIP</span>
+        <strong>tsunamismp.ddns.net</strong>
+    </div>
+
+    <div class="status-card">
+        <span class="status-label">対応</span>
+        <strong>Java版 / 統合版</strong>
+    </div>
+
+    <div class="status-card">
+        <span class="status-label">統合版ポート</span>
+        <strong>19132</strong>
+    </div>
+</div>
+```
+
+</section>
+
 <section class="section reveal">
     <h2>最新情報</h2>
 
-    <div class="timeline">
+```
+<div class="timeline">
 
-        <div class="timeline-item">
-            <div class="timeline-date">2026/06/22</div>
+    <div class="timeline-item">
+        <div class="timeline-date">2026/06/25</div>
 
-            <div class="timeline-content">
-                <h3>公式サイト公開</h3>
-                <p>
-                    TSUNAMI SMP公式サイトを公開しました。
-                </p>
-            </div>
+        <div class="timeline-content">
+            <h3>ギルド機能を追加</h3>
+            <p>
+                /guild から利用できるギルド機能を追加しました。
+                ギルド作成、参加、招待、ギルドチャット、メンバー確認、クエスト、ギルドポイント、永続強化などを利用できます。
+            </p>
         </div>
-
-        <div class="timeline-item">
-            <div class="timeline-date">2026/06/21</div>
-
-            <div class="timeline-content">
-                <h3>Economyシステム導入</h3>
-                <p>
-                    ショップと経済システムを導入しました。
-                </p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-date">2026/06/20</div>
-
-            <div class="timeline-content">
-                <h3>Season 1開始</h3>
-                <p>
-                    TSUNAMI SMP Season 1を開始しました。
-                </p>
-            </div>
-        </div>
-
     </div>
+
+    <div class="timeline-item">
+        <div class="timeline-date">2026/06/25</div>
+
+        <div class="timeline-content">
+            <h3>サーバーIPを統一</h3>
+            <p>
+                Java版・統合版の接続先を tsunamismp.ddns.net に統一しました。
+                統合版のポートは 19132 です。
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-date">2026/06/25</div>
+
+        <div class="timeline-content">
+            <h3>公式サイトを更新</h3>
+            <p>
+                ホーム、コマンド集、EliteMobs説明、更新履歴ページを現在のサーバー内容に合わせて更新しました。
+                新しいIPやギルド機能も反映されています。
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-date">2026/06/24</div>
+
+        <div class="timeline-content">
+            <h3>ショップ価格を調整</h3>
+            <p>
+                経済バランスを整えるため、ショップの売値・買値を複数カテゴリで調整しました。
+                金策が極端になりすぎないように、今後も必要に応じて調整します。
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-date">2026/06/23</div>
+
+        <div class="timeline-content">
+            <h3>Java版・統合版の両対応を調整</h3>
+            <p>
+                Java版と統合版の両方から参加できるように、接続情報や案内を調整しました。
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-date">2026/06/22</div>
+
+        <div class="timeline-content">
+            <h3>公式サイト公開</h3>
+            <p>
+                TSUNAMI SMP公式サイトを公開しました。
+                ルール、コマンド、経済、EliteMobsなどの情報を確認できるようになりました。
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-date">2026/06/21</div>
+
+        <div class="timeline-content">
+            <h3>Economyシステム導入</h3>
+            <p>
+                ショップと経済システムを導入しました。
+                /bal、/pay、/shop などの経済系コマンドを利用できます。
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-date">2026/06/20</div>
+
+        <div class="timeline-content">
+            <h3>Season 1開始</h3>
+            <p>
+                TSUNAMI SMP Season 1を開始しました。
+                サバイバル、経済、EliteMobsを中心に運営していきます。
+            </p>
+        </div>
+    </div>
+
+</div>
+```
+
 </section>
 
 <section class="section glass reveal">
     <h2>イベント情報</h2>
 
-    <div class="cards">
+```
+<div class="cards">
 
-        <div class="card">
-            <h3>開催予定</h3>
-            <p>
-                現在開催予定のイベントはありません。
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>過去イベント</h3>
-            <p>
-                アイスボート大会などのイベントを開催しました。
-            </p>
-        </div>
-
+    <div class="card">
+        <h3>開催予定</h3>
+        <p>
+            現在、ギルド機能を活かしたイベントを検討中です。
+            内容が決まり次第、Discordや公式サイトで告知します。
+        </p>
     </div>
+
+    <div class="card">
+        <h3>過去イベント</h3>
+        <p>
+            アイスボート大会などのイベントを開催しました。
+            今後もサバイバル、PvE、経済を活かしたイベントを追加予定です。
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>イベント参加について</h3>
+        <p>
+            イベントの参加条件やルールは、開催時に個別で告知します。
+            参加する場合は、事前にルールを確認してください。
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section class="section reveal">
+    <h2>最近追加された主な機能</h2>
+
+```
+<div class="command-grid">
+
+    <div class="command-card">
+        <h3>ギルド</h3>
+        <p>
+            仲間とギルドを作成し、クエストやギルドポイント、永続強化を進められるようになりました。
+        </p>
+    </div>
+
+    <div class="command-card">
+        <h3>EliteMobs</h3>
+        <p>
+            強化モブ、ボス、報酬、Adventurers GuildなどのPvE要素を楽しめます。
+        </p>
+    </div>
+
+    <div class="command-card">
+        <h3>経済・ショップ</h3>
+        <p>
+            アイテムの売買や所持金管理ができる経済システムを導入しています。
+        </p>
+    </div>
+
+    <div class="command-card">
+        <h3>便利コマンド</h3>
+        <p>
+            /home、/tpa、/ec、/tpr など、サバイバルを快適にするコマンドを利用できます。
+        </p>
+    </div>
+
+</div>
+```
+
 </section>
 
 <section class="section reveal">
     <h2>今後の予定</h2>
 
-    <ul class="normal-list">
-        <li>EliteMobsコンテンツ追加</li>
-        <li>イベント開催</li>
-        <li>新ショップ追加</li>
-        <li>公式サイト機能強化</li>
-    </ul>
+```
+<ul class="normal-list">
+    <li>ギルド機能のバランス調整</li>
+    <li>ギルドクエストや報酬の追加・調整</li>
+    <li>EliteMobsコンテンツの追加・調整</li>
+    <li>ショップ価格と経済バランスの継続調整</li>
+    <li>サーバーイベントの開催</li>
+    <li>公式サイトの情報更新</li>
+    <li>初心者向け案内の強化</li>
+</ul>
+```
+
+</section>
+
+<section class="section glass reveal">
+    <h2>お知らせの確認方法</h2>
+
+```
+<p>
+    大きなアップデートやイベント情報は、公式サイトとDiscordで告知します。
+    サーバーに参加する前に、ルールや更新情報を確認しておくと安心です。
+</p>
+
+<div class="hero-buttons">
+    <a href="rules.html" class="btn primary">ルールを見る</a>
+    <a href="commands.html" class="btn secondary">コマンド集を見る</a>
+    <a href="https://discord.gg/b72mPS58dR" target="_blank" class="btn discord-btn">Discordに参加</a>
+</div>
+```
+
 </section>
 
 </main>
 
 <footer>
     <p>© TSUNAMI SMP</p>
-    <p>yearning-hc.gl.joinmc.link</p>
+    <p>Server IP: tsunamismp.ddns.net</p>
+    <p>Bedrock Port: 19132</p>
 </footer>
 
 <script src="script.js"></script>
