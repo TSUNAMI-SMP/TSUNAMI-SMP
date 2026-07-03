@@ -1,489 +1,119 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>コマンド集 - TSUNAMI SMP</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コマンド集 - TSUNAMI SMP Season 2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header class="site-header">
-    <div class="logo">TSUNAMI SMP</div>
-
-
-<nav class="nav">
+  <div class="logo">TSUNAMI SMP</div>
+  <nav class="nav">
     <a href="index.html">ホーム</a>
     <a href="rules.html">ルール</a>
     <a href="commands.html">コマンド集</a>
-    <a href="elitemobs.html">EliteMobs</a>
-    <a href="economy.html">経済</a>
+    <a href="plugins.html">サーバー仕様</a>
     <a href="updates.html">更新履歴</a>
-</nav>
-
-
+  </nav>
 </header>
 
 <section class="page-hero">
-    <div class="hero-content reveal">
-        <p class="server-label">Command List</p>
-        <h1>コマンド集</h1>
-        <p class="hero-text">
-            TSUNAMI SMPで利用できる主要コマンド一覧です。<br>
-            サバイバル、経済、EliteMobs、ギルドなど、よく使うコマンドをまとめています。
-        </p>
-    </div>
+  <div class="hero-content reveal">
+    <p class="server-label">Command List</p>
+    <h1>コマンド集</h1>
+    <p class="hero-text">Season 2で使える主なコマンドをまとめています。</p>
+  </div>
 </section>
 
 <main>
-
 <section class="section reveal">
-    <h2>コマンド検索</h2>
-
-
-<input
-    type="text"
-    id="commandSearch"
-    placeholder="例: guild / tpa / shop / em"
-    class="command-search"
->
-
-<p class="section-text">
-    コマンド名や説明文で検索できます。
-</p>
-
-
+  <h2>コマンド検索</h2>
+  <input type="text" id="commandSearch" placeholder="例: tpa / home / sit / spawn" class="command-search">
+  <p class="section-text">コマンド名や説明文で検索できます。</p>
 </section>
 
 <section class="section reveal command-section">
-
-
-<h2>基本・案内</h2>
-
-<div class="command-grid">
-
-    <div class="command-card">
-        <h3>/help</h3>
-        <p>利用できるコマンドのヘルプを確認します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/rules</h3>
-        <p>サーバールールを確認します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/spawn</h3>
-        <p>スポーン地点へ移動します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/list</h3>
-        <p>現在オンラインのプレイヤーを確認します。</p>
-    </div>
-
-</div>
-
-
+  <h2>基本・案内</h2>
+  <div class="command-grid">
+    <div class="command-card"><h3>/help</h3><p>利用できるコマンドのヘルプを確認します。</p></div>
+    <div class="command-card"><h3>/rules</h3><p>サーバールールを確認します。</p></div>
+    <div class="command-card"><h3>/spawn</h3><p>スポーン地点へ移動します。</p></div>
+    <div class="command-card"><h3>/list</h3><p>現在オンラインのプレイヤーを確認します。</p></div>
+    <div class="command-card"><h3>/ping</h3><p>自分のpingを確認します。</p></div>
+  </div>
 </section>
 
 <section class="section reveal command-section">
-
-
-<h2>移動・テレポート</h2>
-
-<div class="command-grid">
-
-    <div class="command-card">
-        <h3>/sethome</h3>
-        <p>現在地をホーム地点として設定します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/home</h3>
-        <p>設定したホームへ移動します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/delhome</h3>
-        <p>設定したホームを削除します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/tpa 名前</h3>
-        <p>指定したプレイヤーの場所へテレポート申請を送ります。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/tpahere 名前</h3>
-        <p>指定したプレイヤーを自分の場所へ呼ぶ申請を送ります。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/tpaccept</h3>
-        <p>届いたテレポート申請を承認します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/tpdeny</h3>
-        <p>届いたテレポート申請を拒否します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/rtp</h3>
-        <p>ランダムな場所へテレポートします。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/tpr</h3>
-        <p>ランダムテレポートを行います。サーバー設定によりクールダウンがあります。</p>
-    </div>
-
-</div>
-
-
+  <h2>移動・テレポート</h2>
+  <div class="command-grid">
+    <div class="command-card"><h3>/sethome</h3><p>現在地をホーム地点として設定します。</p></div>
+    <div class="command-card"><h3>/home</h3><p>設定したホームへ移動します。</p></div>
+    <div class="command-card"><h3>/delhome</h3><p>設定したホームを削除します。</p></div>
+    <div class="command-card"><h3>/tpa 名前</h3><p>指定したプレイヤーの場所へテレポート申請を送ります。</p></div>
+    <div class="command-card"><h3>/tpahere 名前</h3><p>指定したプレイヤーを自分の場所へ呼ぶ申請を送ります。</p></div>
+    <div class="command-card"><h3>/tpaccept</h3><p>届いたテレポート申請を承認します。</p></div>
+    <div class="command-card"><h3>/tpdeny</h3><p>届いたテレポート申請を拒否します。</p></div>
+    <div class="command-card"><h3>/rtp</h3><p>ランダムな場所へテレポートします。利用可否やクールダウンはサーバー設定に従います。</p></div>
+  </div>
 </section>
 
 <section class="section reveal command-section">
-
-
-<h2>経済・ショップ</h2>
-
-<div class="command-grid">
-
-    <div class="command-card">
-        <h3>/bal</h3>
-        <p>自分の所持金を確認します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/balance</h3>
-        <p>所持金を確認します。/bal と同じ用途です。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/pay 名前 金額</h3>
-        <p>指定したプレイヤーへ送金します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/baltop</h3>
-        <p>サーバー内の資産ランキングを確認します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/shop</h3>
-        <p>サーバーショップを開き、アイテムの購入や売却を行います。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/sellgui</h3>
-        <p>売却用GUIを開き、対応アイテムをまとめて売却します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/sellall</h3>
-        <p>売却可能なアイテムをまとめて売却します。</p>
-    </div>
-
-</div>
-
-
+  <h2>チャット・交流</h2>
+  <div class="command-grid">
+    <div class="command-card"><h3>/msg 名前 内容</h3><p>指定したプレイヤーへ個人メッセージを送信します。</p></div>
+    <div class="command-card"><h3>/tell 名前 内容</h3><p>個人メッセージを送信します。/msg と同じ用途です。</p></div>
+    <div class="command-card"><h3>/reply 内容</h3><p>最後にメッセージを送った相手、または受け取った相手へ返信します。</p></div>
+    <div class="command-card"><h3>/r 内容</h3><p>/reply の短縮形です。</p></div>
+    <div class="command-card"><h3>/ignore 名前</h3><p>指定したプレイヤーからのメッセージを非表示にします。</p></div>
+    <div class="command-card"><h3>/unignore 名前</h3><p>ignoreしたプレイヤーを解除します。</p></div>
+  </div>
 </section>
 
 <section class="section reveal command-section">
-
-
-<h2>チャット・交流</h2>
-
-<div class="command-grid">
-
-    <div class="command-card">
-        <h3>/msg 名前 内容</h3>
-        <p>指定したプレイヤーへ個人メッセージを送信します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/tell 名前 内容</h3>
-        <p>個人メッセージを送信します。/msg と同じ用途です。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/reply 内容</h3>
-        <p>最後にメッセージを送った相手、または受け取った相手へ返信します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/r 内容</h3>
-        <p>/reply の短縮形です。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/ignore 名前</h3>
-        <p>指定したプレイヤーからのメッセージを非表示にします。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/unignore 名前</h3>
-        <p>ignoreしたプレイヤーを解除します。</p>
-    </div>
-
-</div>
-
-
+  <h2>GSit</h2>
+  <div class="command-grid">
+    <div class="command-card"><h3>/sit</h3><p>その場に座ります。</p></div>
+    <div class="command-card"><h3>/lay</h3><p>その場で寝転がります。</p></div>
+    <div class="command-card"><h3>/crawl</h3><p>その場でクロール姿勢になります。</p></div>
+    <div class="command-card"><h3>/bellyflop</h3><p>うつ伏せのような姿勢になります。</p></div>
+    <div class="command-card"><h3>/spin</h3><p>スピンします。利用可否はサーバー設定に従います。</p></div>
+  </div>
 </section>
 
 <section class="section reveal command-section">
-
-
-<h2>便利機能</h2>
-
-<div class="command-grid">
-
-    <div class="command-card">
-        <h3>/ec</h3>
-        <p>エンダーチェストを開きます。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/enderchest</h3>
-        <p>エンダーチェストを開きます。/ec と同じ用途です。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/craft</h3>
-        <p>作業台を開きます。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/hat</h3>
-        <p>手に持っているアイテムを頭に装備します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/suicide</h3>
-        <p>自分のプレイヤーをリスポーンさせたい場合に使います。アイテムロストに注意してください。</p>
-    </div>
-
-</div>
-
-
+  <h2>便利機能</h2>
+  <div class="command-grid">
+    <div class="command-card"><h3>/afk</h3><p>離席状態を切り替えます。</p></div>
+    <div class="command-card"><h3>/ec</h3><p>エンダーチェストを開きます。利用可否はサーバー設定に従います。</p></div>
+    <div class="command-card"><h3>/enderchest</h3><p>エンダーチェストを開きます。/ec と同じ用途です。</p></div>
+    <div class="command-card"><h3>/craft</h3><p>作業台を開きます。利用可否はサーバー設定に従います。</p></div>
+  </div>
 </section>
 
 <section class="section reveal command-section">
-
-
-<h2>ギルド</h2>
-
-<div class="command-grid">
-
-    <div class="command-card">
-        <h3>/guild</h3>
-        <p>ギルドGUIを開きます。作成、参加、メンバー確認、クエスト、強化などを行えます。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/guild help</h3>
-        <p>ギルド関連コマンドのヘルプを表示します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/gc 内容</h3>
-        <p>ギルドに所属しているメンバーだけに見えるチャットを送信します。</p>
-    </div>
-
-</div>
-
-
-</section>
-
-<section class="section reveal command-section">
-
-
-<h2>EliteMobs</h2>
-
-<div class="command-grid">
-
-    <div class="command-card">
-        <h3>/em</h3>
-        <p>EliteMobsのメインメニューを開きます。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/em shop</h3>
-        <p>EliteMobs関連のショップを開きます。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/em quests</h3>
-        <p>EliteMobsのクエスト関連メニューを開きます。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/em rank</h3>
-        <p>EliteMobsのランクや進行状況を確認します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/em wallet</h3>
-        <p>EliteMobs内の通貨や所持状況を確認します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/em pay 名前 金額</h3>
-        <p>EliteMobsの通貨を他プレイヤーへ送金します。</p>
-    </div>
-
-</div>
-
-
-</section>
-
-<section class="section reveal command-section">
-
-```
-<h2>Adventurers Guild</h2>
-
-<div class="command-grid">
-
-    <div class="command-card">
-        <h3>/ag</h3>
-        <p>Adventurers Guildのメニューを開きます。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/ag help</h3>
-        <p>Adventurers Guild関連のヘルプを確認します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/ag menu</h3>
-        <p>Adventurers GuildのGUIメニューを開きます。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/ag rank</h3>
-        <p>Adventurers Guildでのランクや進行状況を確認します。</p>
-    </div>
-
-</div>
-
-
-</section>
-
-<section class="section reveal command-section">
-
-
-<h2>保護・確認</h2>
-
-<div class="command-grid">
-
-    <div class="command-card">
-        <h3>/co i</h3>
-        <p>ブロックやチェストなどの履歴確認モードを切り替えます。スタッフ向けです。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/co l</h3>
-        <p>CoreProtectのログを確認します。スタッフ向けです。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/report 名前 理由</h3>
-        <p>問題のあるプレイヤーを運営へ報告します。</p>
-    </div>
-
-</div>
-
-
-</section>
-
-<section class="section reveal command-section">
-
-
-<h2>その他</h2>
-
-<div class="command-grid">
-
-    <div class="command-card">
-        <h3>/afk</h3>
-        <p>離席状態を切り替えます。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/ping</h3>
-        <p>自分のpingを確認します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/realname 名前</h3>
-        <p>ニックネームの元プレイヤー名を確認します。</p>
-    </div>
-
-    <div class="command-card">
-        <h3>/nick 名前</h3>
-        <p>ニックネームを設定します。利用可能かどうかはランクや権限によります。</p>
-    </div>
-
-</div>
-
-
+  <h2>保護・報告</h2>
+  <div class="command-grid">
+    <div class="command-card"><h3>/report 名前 理由</h3><p>問題のあるプレイヤーや荒らしを運営へ報告します。</p></div>
+    <div class="command-card"><h3>/co i</h3><p>CoreProtectの履歴確認モードです。スタッフ向けです。</p></div>
+    <div class="command-card"><h3>/co l</h3><p>CoreProtectのログを確認します。スタッフ向けです。</p></div>
+    <div class="command-card"><h3>/co rollback</h3><p>荒らし被害の復旧に使用します。スタッフ向けです。</p></div>
+  </div>
 </section>
 
 <section class="section reveal">
-    <h2>注意事項</h2>
-    <p class="section-text">
-        一部のコマンドは、ランク・権限・ワールド・クールダウン設定によって使用できない場合があります。<br>
-        コマンドが使えない場合は、運営に確認してください。
-    </p>
+  <h2>注意事項</h2>
+  <p class="section-text">
+    一部のコマンドは、ランク・権限・ワールド・クールダウン設定によって使用できない場合があります。<br>
+    コマンドが使えない場合は、運営に確認してください。
+  </p>
 </section>
-
 </main>
 
 <footer>
-    <p>© TSUNAMI SMP</p>
-    <p>Server IP: tsunamismp.ddns.net</p>
+  <p>© TSUNAMI SMP</p>
+  <p>Server IP: tsunamismp.ddns.net</p>
 </footer>
-
 <script src="script.js"></script>
-
-<script>
-const searchInput = document.getElementById("commandSearch");
-
-searchInput.addEventListener("keyup", () => {
-
-    const value = searchInput.value.toLowerCase().trim();
-
-    document.querySelectorAll(".command-card").forEach(card => {
-        const text = card.innerText.toLowerCase();
-
-        if(text.includes(value)) {
-            card.style.display = "";
-        } else {
-            card.style.display = "none";
-        }
-    });
-
-    document.querySelectorAll(".command-section").forEach(section => {
-        const cards = section.querySelectorAll(".command-card");
-        let visibleCount = 0;
-
-        cards.forEach(card => {
-            if(card.style.display !== "none") {
-                visibleCount++;
-            }
-        });
-
-        if(value === "" || visibleCount > 0) {
-            section.style.display = "";
-        } else {
-            section.style.display = "none";
-        }
-    });
-
-});
-</script>
-
 </body>
 </html>

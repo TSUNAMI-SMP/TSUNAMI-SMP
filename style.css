@@ -660,3 +660,41 @@ footer {
     padding: 15px 20px;
     border-radius: 10px;
 }
+/* ===== Timeline ===== */
+.timeline {
+    display: grid;
+    gap: 22px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 22px;
+    align-items: start;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 24px;
+    transition: 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    background: rgba(0,183,255,0.12);
+}
+
+.timeline-date {
+    color: #7ee7ff;
+    font-weight: bold;
+}
+
+.timeline-content h3 {
+    color: #5fdcff;
+    margin-bottom: 10px;
+}
+
+@media(max-width:700px) {
+    .timeline-item {
+        grid-template-columns: 1fr;
+    }
+}

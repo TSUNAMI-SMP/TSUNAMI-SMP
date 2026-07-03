@@ -1,94 +1,70 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TSUNAMI SMP</title>
+  <title>TSUNAMI SMP Season 2</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="site-header">
+  <div class="logo">TSUNAMI SMP</div>
+  <nav class="nav">
+    <a href="index.html">ホーム</a>
+    <a href="rules.html">ルール</a>
+    <a href="commands.html">コマンド集</a>
+    <a href="plugins.html">サーバー仕様</a>
+    <a href="updates.html">更新履歴</a>
+  </nav>
+</header>
 
-  <header class="site-header">
-    <div class="logo">TSUNAMI SMP</div>
+<section class="hero">
+  <div class="wave wave1"></div>
+  <div class="wave wave2"></div>
+  <div class="hero-content reveal">
+    <p class="server-label">Season 2 Vanilla Survival</p>
+    <h1>TSUNAMI SMP</h1>
+    <p class="hero-text">
+      Paper 1.21.11で動作する、シンプルなバニラ寄りサバイバルサーバー。<br>
+      荒らしなし・PvPなしで、のんびり建築・探索・交流を楽しめます。
+    </p>
 
+    <div class="ip-box">
+      <span id="server-ip">tsunamismp.ddns.net</span>
+      <button onclick="copyIP()">IPをコピー</button>
+    </div>
 
-<nav class="nav">
-  <a href="index.html">ホーム</a>
-  <a href="rules.html">ルール</a>
-  <a href="commands.html">コマンド集</a>
-  <a href="elitemobs.html">EliteMobs</a>
-  <a href="economy.html">経済</a>
-  <a href="updates.html">更新履歴</a>
-</nav>
+    <p class="hero-text">
+      公開予定：<strong>2026/07/05 12:00</strong><br>
+      Java版：<strong>tsunamismp.ddns.net</strong><br>
+      統合版：<strong>tsunamismp.ddns.net</strong> / ポート：<strong>19132</strong>
+    </p>
 
-  </header>
-
-  <section class="hero">
-    <div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-
-
-<div class="hero-content reveal">
-  <p class="server-label">Economy & Survival Server</p>
-  <h1>TSUNAMI SMP</h1>
-
-  <p class="hero-text">
-    Java版・統合版の両方で参加できる、経済・サバイバル・EliteMobs・ギルドを楽しめるMinecraftサーバー。
-  </p>
-
-  <div class="ip-box">
-    <span id="server-ip">tsunamismp.ddns.net</span>
-    <button onclick="copyIP()">IPをコピー</button>
+    <div class="hero-buttons">
+      <a href="rules.html" class="btn primary">ルールを見る</a>
+      <a href="commands.html" class="btn secondary">コマンドを見る</a>
+      <a href="https://discord.gg/b72mPS58dR" target="_blank" class="btn discord-btn">Discordに参加</a>
+    </div>
   </div>
+</section>
 
-  <p class="hero-text">
-    Java版：<strong>tsunamismp.ddns.net</strong><br>
-    統合版：<strong>tsunamismp.ddns.net</strong> / ポート：<strong>19132</strong>
-  </p>
-
-  <div class="hero-buttons">
-    <a href="rules.html" class="btn primary">ルールを見る</a>
-    <a href="commands.html" class="btn secondary">コマンドを見る</a>
-    <a href="https://discord.gg/b72mPS58dR" target="_blank" class="btn discord-btn">Discordに参加</a>
-  </div>
-</div>
-
-
-  </section>
-
-  <main>
-
-
+<main>
 <section class="section reveal">
-  <h2>TSUNAMI SMPとは？</h2>
+  <h2>Season 2について</h2>
   <p>
-    TSUNAMI SMPは、通常のサバイバルに経済・ショップ・テレポート・EliteMobs・ギルド機能などを追加した、
-    遊びやすく本格的なMinecraftサーバーです。
-    初心者でも始めやすく、長く遊ぶほど成長や目標が増えていくサーバーを目指しています。
+    TSUNAMI SMP Season 2は、余計な追加要素を減らしたシンプルなバニラサーバーです。
+    経済や特殊PvEを中心にするのではなく、Minecraft本来のサバイバル、建築、探索、協力プレイを楽しめる環境を目指しています。
   </p>
 </section>
 
 <section class="section glass reveal">
-  <h2>参加方法</h2>
-
+  <h2>参加情報</h2>
   <div class="status-grid">
-    <div class="status-card">
-      <span class="status-label">サーバーIP</span>
-      <strong>tsunamismp.ddns.net</strong>
-    </div>
-
-    <div class="status-card">
-      <span class="status-label">対応機種</span>
-      <strong>Java版 / 統合版</strong>
-    </div>
-
-    <div class="status-card">
-      <span class="status-label">統合版ポート</span>
-      <strong>19132</strong>
-    </div>
+    <div class="status-card"><span class="status-label">サーバーIP</span><strong>tsunamismp.ddns.net</strong></div>
+    <div class="status-card"><span class="status-label">バージョン</span><strong>Paper 1.21.11</strong></div>
+    <div class="status-card"><span class="status-label">公開予定</span><strong>7/5 12:00</strong></div>
+    <div class="status-card"><span class="status-label">対応</span><strong>Java版 / 統合版</strong></div>
   </div>
-
   <p class="section-text">
     Java版はIPをそのまま入力してください。統合版はIPに加えて、ポートに <strong>19132</strong> を入力してください。
   </p>
@@ -96,67 +72,20 @@
 
 <section class="section reveal">
   <h2>お知らせ</h2>
-
   <div class="news-box">
-
-    <div class="news-item">
-      <span>2026/06/25</span>
-      <p>ギルド機能を追加しました。/guild からギルド作成、参加、クエスト、強化などを利用できます。</p>
-    </div>
-
-    <div class="news-item">
-      <span>2026/06/25</span>
-      <p>サーバーIPを tsunamismp.ddns.net に統一しました。統合版ポートは19132です。</p>
-    </div>
-
-    <div class="news-item">
-      <span>2026/06/24</span>
-      <p>ショップ価格や経済バランスを調整しました。</p>
-    </div>
-
-    <div class="news-item">
-      <span>2026/06/23</span>
-      <p>Java版・統合版の両方から参加できるように調整しました。</p>
-    </div>
-
-    <div class="news-item">
-      <span>2026/06/22</span>
-      <p>TSUNAMI SMP公式サイトを公開しました。</p>
-    </div>
-
-    <div class="news-item">
-      <span>2026/06/21</span>
-      <p>経済システムと便利コマンドを追加しました。</p>
-    </div>
-
-    <div class="news-item">
-      <span>2026/06/20</span>
-      <p>Season 1を開始しました。</p>
-    </div>
-
+    <div class="news-item"><span>2026/07/05</span><p>12:00にTSUNAMI SMP Season 2公開予定です。</p></div>
+    <div class="news-item"><span>2026/07/03</span><p>Season 2向けにルール・コマンド・公式サイト内容を更新しました。</p></div>
+    <div class="news-item"><span>2026/07/03</span><p>CoreProtect、GrimAC、GeyserMC、GSitなどを導入したシンプルなバニラ寄り構成に変更しました。</p></div>
   </div>
 </section>
 
 <section class="section glass reveal">
   <h2>サーバーステータス</h2>
-
   <div class="status-grid">
-    <div class="status-card">
-      <span class="status-label">状態</span>
-      <strong id="server-status">取得中...</strong>
-    </div>
-
-    <div class="status-card">
-      <span class="status-label">オンライン人数</span>
-      <strong id="server-players">取得中...</strong>
-    </div>
-
-    <div class="status-card">
-      <span class="status-label">対応</span>
-      <strong>Java版 / 統合版対応</strong>
-    </div>
+    <div class="status-card"><span class="status-label">状態</span><strong id="server-status">取得中...</strong></div>
+    <div class="status-card"><span class="status-label">オンライン人数</span><strong id="server-players">取得中...</strong></div>
+    <div class="status-card"><span class="status-label">方針</span><strong>荒らしなし / PvPなし</strong></div>
   </div>
-
   <div class="join-actions">
     <a href="commands.html" class="btn primary">遊び方を見る</a>
     <a href="rules.html" class="btn secondary">ルール確認</a>
@@ -164,71 +93,28 @@
 </section>
 
 <section class="cards">
-  <div class="card reveal">
-    <h3>経済システム</h3>
-    <p>
-      お金を稼ぎ、ショップでアイテムを売買できます。
-      採掘・農業・モブドロップなどを活用して資産を増やしましょう。
-    </p>
-  </div>
-
-  <div class="card reveal">
-    <h3>便利コマンド</h3>
-    <p>
-      /home、/tpa、/ec、/tpr などを使って快適に遊べます。
-      詳しい使い方はコマンド集を確認してください。
-    </p>
-  </div>
-
-  <div class="card reveal">
-    <h3>EliteMobs</h3>
-    <p>
-      強力なモブ、ボス、特別な報酬で、普通のサバイバルより刺激的に楽しめます。
-    </p>
-  </div>
-
-  <div class="card reveal">
-    <h3>ギルド</h3>
-    <p>
-      仲間とギルドを作成し、クエストやギルドポイント、永続強化を進められます。
-    </p>
-  </div>
+  <div class="card reveal"><h3>シンプルなバニラ</h3><p>Paper 1.21.11で、バニラのサバイバルをベースに快適さだけを少し追加しています。</p></div>
+  <div class="card reveal"><h3>荒らし対策</h3><p>CoreProtectでブロック破壊やチェスト操作などを記録し、問題があれば確認・復旧できるようにしています。</p></div>
+  <div class="card reveal"><h3>アンチチート</h3><p>GrimACで不正クライアントや不自然な挙動を検知し、公平に遊べる環境を守ります。</p></div>
+  <div class="card reveal"><h3>Java・統合版対応</h3><p>GeyserMCにより、Java版と統合版の両方から参加できます。</p></div>
 </section>
 
 <section class="section glass reveal">
   <h2>はじめ方</h2>
-
   <div class="steps">
-    <div>
-      <span>01</span>
-      <p>サーバーIP「tsunamismp.ddns.net」をコピー</p>
-    </div>
-
-    <div>
-      <span>02</span>
-      <p>Minecraftでサーバーを追加</p>
-    </div>
-
-    <div>
-      <span>03</span>
-      <p>統合版の場合はポートに「19132」を入力</p>
-    </div>
-
-    <div>
-      <span>04</span>
-      <p>TSUNAMI SMPに参加してサバイバル開始</p>
-    </div>
+    <div><span>01</span><p>サーバーIP「tsunamismp.ddns.net」をコピー</p></div>
+    <div><span>02</span><p>Minecraftでサーバーを追加</p></div>
+    <div><span>03</span><p>統合版の場合はポート「19132」も入力</p></div>
+    <div><span>04</span><p>Season 2の世界でサバイバル開始</p></div>
   </div>
 </section>
 
 <section class="section reveal">
   <h2>おすすめページ</h2>
-
   <div class="link-grid">
     <a href="rules.html">サーバールール</a>
     <a href="commands.html">コマンド集</a>
-    <a href="elitemobs.html">EliteMobs説明</a>
-    <a href="economy.html">経済システム</a>
+    <a href="plugins.html">サーバー仕様</a>
     <a href="updates.html">更新履歴</a>
   </div>
 </section>
@@ -239,29 +125,15 @@
     不具合報告、荒らし報告、質問、イベント情報はDiscordから確認できます。
     困ったことがあれば運営まで連絡してください。
   </p>
-
-  <a href="https://discord.gg/b72mPS58dR" target="_blank" class="btn discord-btn">
-    Discordへ参加
-  </a>
+  <a href="https://discord.gg/b72mPS58dR" target="_blank" class="btn discord-btn">Discordへ参加</a>
 </section>
+</main>
 
-
-  </main>
-
-  <footer>
-    <p>© TSUNAMI SMP</p>
-    <p>Server IP: tsunamismp.ddns.net</p>
-    <p>Bedrock Port: 19132</p>
-  </footer>
-
-  <script src="script.js"></script>
-
-  <script>
-    function copyIP() {
-      navigator.clipboard.writeText("tsunamismp.ddns.net");
-      alert("サーバーIPをコピーしました！");
-    }
-  </script>
-
+<footer>
+  <p>© TSUNAMI SMP</p>
+  <p>Server IP: tsunamismp.ddns.net</p>
+  <p>Bedrock Port: 19132</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
